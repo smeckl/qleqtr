@@ -9,6 +9,8 @@
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+*.cer
+*.pvk
 
 # Build results
 [Dd]ebug/
