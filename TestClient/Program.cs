@@ -77,7 +77,8 @@ namespace qleqtr.TestClient
                 return;
             }
 
-            GetRegistryKeyRequestMessage msg = new GetRegistryKeyRequestMessage(1, RootKey.HKEY_CURRENT_USER, "Software\\CollectionAgentTest");
+            GetFileRequestMessage msg = new GetFileRequestMessage(1, @"C:\Windows\System32\cmd111.exe");
+            //GetRegistryKeyRequestMessage msg = new GetRegistryKeyRequestMessage(1, RootKey.HKEY_CURRENT_USER, "Software\\CollectionAgentTest");
             //CollectionAgentMessage msg = new CollectionAgentMessage(1);
 
             // Send the message to the CollectionAgent

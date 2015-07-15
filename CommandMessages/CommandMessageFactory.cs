@@ -23,7 +23,9 @@ namespace qleqtr.CommandMessages
         public String[] supportedMessages { get; } =
         {
             "GetRegistryKeyRequestMessage",
-            "GetRegistryKeyResponseMessage"
+            "GetRegistryKeyResponseMessage",
+            "GetFileRequestMessage",
+            "GetFileResponseMessage"
         };
 
         // Add the types to the map
@@ -31,6 +33,8 @@ namespace qleqtr.CommandMessages
         {
             typeMap.Add(supportedMessages[0], typeof(GetRegistryKeyRequestMessage));
             typeMap.Add(supportedMessages[1], typeof(GetRegistryKeyResponseMessage));
+            typeMap.Add(supportedMessages[2], typeof(GetFileRequestMessage));
+            typeMap.Add(supportedMessages[3], typeof(GetFileResponseMessage));
         }
     }
 }

@@ -19,19 +19,6 @@ using qleqtr.CommandMessages;
 
 namespace qleqtr.CommandProcessors
 {
-    public class ProcessorLoader
-    {
-        public ICommandProcessor[] getProcessorList()
-        {
-            ICommandProcessor[] procList = new ICommandProcessor[1];
-
-            procList[0] = new GetRegistryKeyRequestProcessor();
-
-            return procList;
-        }
-    }
-
-
     public class GetRegistryKeyRequestProcessor : ICommandProcessor
     {
         public String requestType { get; private set; }

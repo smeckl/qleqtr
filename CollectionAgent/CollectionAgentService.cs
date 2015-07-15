@@ -101,7 +101,7 @@ namespace qleqtr.CollectionAgent
             {
                 // Attempt to load the DLL
                 assemblyList[i] = Assembly.LoadFrom(dllList[i]);
-
+               
                 // If we successfully loaded the file, then attempt to load interfaces
                 if (null != assemblyList[i])
                 {
